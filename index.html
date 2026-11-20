@@ -6,7 +6,7 @@
 <title>Project Sogon Juara</title>
 <style>
   * { box-sizing: border-box; }
-  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: linear-gradient(rgba(16,26,18,0.30), rgba(16,26,18,0.50)), url("https://pengati-bambang.vercel.app/images/sogon-bg.jpg") center / cover no-repeat fixed, #101a12; color: #eef5ee; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: linear-gradient(rgba(16,26,18,0.30), rgba(16,26,18,0.50)), url("images/sogon-bg.jpg") center / cover no-repeat fixed, #101a12; color: #eef5ee; }
   .wrap { max-width: 560px; margin: 0 auto; padding: 20px 16px 40px; }
   h1 { font-size: 24px; margin: 8px 0 4px; text-align: center; text-shadow: 0 1px 4px rgba(0,0,0,0.6); }
   .sub { text-align: center; color: #d6e8d6; font-size: 14px; margin: 0 0 20px; text-shadow: 0 1px 4px rgba(0,0,0,0.6); }
@@ -60,39 +60,39 @@
 
 <script>
 var tracks = [
-  { sec: "Suara Sogon", file: "https://pengati-bambang.vercel.app/audio/sogon-pikat.mp3", name: "Pikat", desc: "Suara sogok ontong untuk pikat" },
-  { sec: "Suara Sogon", file: "https://pengati-bambang.vercel.app/audio/sogon-pancingan.mp3", name: "Pancingan Bunyi", desc: "Gacor pancingan bunyi" },
-  { sec: "Suara Sogon", file: "https://pengati-bambang.vercel.app/audio/sogon-memanggil-lawan.mp3", name: "Memanggil Lawan", desc: "Gacor memanggil lawan" },
-  { sec: "Suara Sogon", file: "https://pengati-bambang.vercel.app/audio/sogon-masteran.mp3", name: "Tembakan Masteran", desc: "Tembakan sogok ontong gacor masteran" },
-  { sec: "Suara Sogon", file: "https://pengati-bambang.vercel.app/audio/sogon-speed-rapat.mp3", name: "Speed Rapat Nembak Panjang", desc: "Gacor speed rapat nembak panjang" },
-  { sec: "Suara Sogon", file: "https://pengati-bambang.vercel.app/audio/sogon-nyecret.mp3", name: "Tembakan Nyecret Panjang", desc: "Tembakan nyecret panjang" },
-  { sec: "Suara Sogon", file: "https://pengati-bambang.vercel.app/audio/sogon-isian-kenari.mp3", name: "Isian Kenari", desc: "Gacor isian kenari" },
-  { sec: "Suara Sogon", file: "https://pengati-bambang.vercel.app/audio/sogon-tembakan-pedas.mp3", name: "Tembakan Pedas", desc: "Tembakan pedas" },
-  { sec: "Suara Sogon", file: "https://pengati-bambang.vercel.app/audio/sogon-nembak-panjang.mp3", name: "Nembak Panjang", desc: "Nembak panjang" },
-  { sec: "Suara Sogon", file: "https://pengati-bambang.vercel.app/audio/sogon-alam-liar.mp3", name: "Di Alam Liar", desc: "Suara sogok ontong di alam liar" },
-  { sec: "Terapi Alam", file: "https://pengati-bambang.vercel.app/audio/terapi-air-mengalir.mp3", name: "Air Mengalir", desc: "Suara air mengalir, terapi menenangkan" },
-  { sec: "Terapi Alam", file: "https://pengati-bambang.vercel.app/audio/terapi-air-terjun.mp3", name: "Air Terjun", desc: "Suara air terjun, terapi menenangkan" },
-  { sec: "Terapi Alam", file: "https://pengati-bambang.vercel.app/audio/terapi-hujan.mp3", name: "Hujan", desc: "Suara hujan, terapi menenangkan" },
-  { sec: "Terapi Alam", file: "https://pengati-bambang.vercel.app/audio/terapi-hujan-hutan.mp3", name: "Hujan di Hutan", desc: "Suara hujan di hutan, terapi menenangkan" },
-  { sec: "Terapi Alam", file: "https://pengati-bambang.vercel.app/audio/terapi-alam-burung.mp3", name: "Alam & Burung", desc: "Suara air mengalir dan burung di alam" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/masteran-cililin.mp3", name: "Cililin", desc: "Masteran cililin" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-kapas-tembak.mp3", name: "Kapas Tembak", desc: "Masteran kapas tembak" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-cucak-jenggot.mp3", name: "Cucak Jenggot", desc: "Masteran cucak jenggot" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-tengkek-buto.mp3", name: "Tengkek Buto", desc: "Masteran tengkek buto" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-kenari.mp3", name: "Kenari", desc: "Masteran kenari" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/masteran-lovebird.mp3", name: "Lovebird Ngekek", desc: "Masteran lovebird ngekek panjang" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-konin.mp3", name: "Konin", desc: "Masteran kolibri ninja (konin)" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-pelatuk-beras.mp3", name: "Pelatuk Sampit / Beras", desc: "Masteran pelatuk beras" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-gereja-tarung.mp3", name: "Gereja Tarung", desc: "Masteran gereja tarung" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-srindit.mp3", name: "Srindit", desc: "Masteran srindit" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-cucak-cungkok.mp3", name: "Cucak Cungkok", desc: "Masteran cucak cungkok" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-rambatan-doraemon.mp3", name: "Rambatan Doraemon", desc: "Masteran rambatan doraemon" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-siri-siri.mp3", name: "Siri Siri Kecil", desc: "Masteran siri siri kecil" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-belalang-kecek.mp3", name: "Belalang Kecek", desc: "Masteran belalang kecek" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-pelatuk-bawang.mp3", name: "Pelatuk Bawang", desc: "Masteran pelatuk bawang" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-perenjak-lumut.mp3", name: "Perenjak Lumut", desc: "Masteran perenjak lumut" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/isian-ciblek-kristal.mp3", name: "Ciblek Kristal", desc: "Masteran ciblek kristal" },
-  { sec: "Masteran Burung", file: "https://pengati-bambang.vercel.app/audio/masteran-ciblek-lovebird-kenari.mp3", name: "Ciblek, Lovebird & Kenari", desc: "Masteran ciblek, lovebird dan kenari" }
+  { sec: "Suara Sogon", file: "audio/sogon-pikat.mp3", name: "Pikat", desc: "Suara sogok ontong untuk pikat" },
+  { sec: "Suara Sogon", file: "audio/sogon-pancingan.mp3", name: "Pancingan Bunyi", desc: "Gacor pancingan bunyi" },
+  { sec: "Suara Sogon", file: "audio/sogon-memanggil-lawan.mp3", name: "Memanggil Lawan", desc: "Gacor memanggil lawan" },
+  { sec: "Suara Sogon", file: "audio/sogon-masteran.mp3", name: "Tembakan Masteran", desc: "Tembakan sogok ontong gacor masteran" },
+  { sec: "Suara Sogon", file: "audio/sogon-speed-rapat.mp3", name: "Speed Rapat Nembak Panjang", desc: "Gacor speed rapat nembak panjang" },
+  { sec: "Suara Sogon", file: "audio/sogon-nyecret.mp3", name: "Tembakan Nyecret Panjang", desc: "Tembakan nyecret panjang" },
+  { sec: "Suara Sogon", file: "audio/sogon-isian-kenari.mp3", name: "Isian Kenari", desc: "Gacor isian kenari" },
+  { sec: "Suara Sogon", file: "audio/sogon-tembakan-pedas.mp3", name: "Tembakan Pedas", desc: "Tembakan pedas" },
+  { sec: "Suara Sogon", file: "audio/sogon-nembak-panjang.mp3", name: "Nembak Panjang", desc: "Nembak panjang" },
+  { sec: "Suara Sogon", file: "audio/sogon-alam-liar.mp3", name: "Di Alam Liar", desc: "Suara sogok ontong di alam liar" },
+  { sec: "Terapi Alam", file: "audio/terapi-air-mengalir.mp3", name: "Air Mengalir", desc: "Suara air mengalir, terapi menenangkan" },
+  { sec: "Terapi Alam", file: "audio/terapi-air-terjun.mp3", name: "Air Terjun", desc: "Suara air terjun, terapi menenangkan" },
+  { sec: "Terapi Alam", file: "audio/terapi-hujan.mp3", name: "Hujan", desc: "Suara hujan, terapi menenangkan" },
+  { sec: "Terapi Alam", file: "audio/terapi-hujan-hutan.mp3", name: "Hujan di Hutan", desc: "Suara hujan di hutan, terapi menenangkan" },
+  { sec: "Terapi Alam", file: "audio/terapi-alam-burung.mp3", name: "Alam & Burung", desc: "Suara air mengalir dan burung di alam" },
+  { sec: "Masteran Burung", file: "audio/masteran-cililin.mp3", name: "Cililin", desc: "Masteran cililin" },
+  { sec: "Masteran Burung", file: "audio/isian-kapas-tembak.mp3", name: "Kapas Tembak", desc: "Masteran kapas tembak" },
+  { sec: "Masteran Burung", file: "audio/isian-cucak-jenggot.mp3", name: "Cucak Jenggot", desc: "Masteran cucak jenggot" },
+  { sec: "Masteran Burung", file: "audio/isian-tengkek-buto.mp3", name: "Tengkek Buto", desc: "Masteran tengkek buto" },
+  { sec: "Masteran Burung", file: "audio/isian-kenari.mp3", name: "Kenari", desc: "Masteran kenari" },
+  { sec: "Masteran Burung", file: "audio/masteran-lovebird.mp3", name: "Lovebird Ngekek", desc: "Masteran lovebird ngekek panjang" },
+  { sec: "Masteran Burung", file: "audio/isian-konin.mp3", name: "Konin", desc: "Masteran kolibri ninja (konin)" },
+  { sec: "Masteran Burung", file: "audio/isian-pelatuk-beras.mp3", name: "Pelatuk Sampit / Beras", desc: "Masteran pelatuk beras" },
+  { sec: "Masteran Burung", file: "audio/isian-gereja-tarung.mp3", name: "Gereja Tarung", desc: "Masteran gereja tarung" },
+  { sec: "Masteran Burung", file: "audio/isian-srindit.mp3", name: "Srindit", desc: "Masteran srindit" },
+  { sec: "Masteran Burung", file: "audio/isian-cucak-cungkok.mp3", name: "Cucak Cungkok", desc: "Masteran cucak cungkok" },
+  { sec: "Masteran Burung", file: "audio/isian-rambatan-doraemon.mp3", name: "Rambatan Doraemon", desc: "Masteran rambatan doraemon" },
+  { sec: "Masteran Burung", file: "audio/isian-siri-siri.mp3", name: "Siri Siri Kecil", desc: "Masteran siri siri kecil" },
+  { sec: "Masteran Burung", file: "audio/isian-belalang-kecek.mp3", name: "Belalang Kecek", desc: "Masteran belalang kecek" },
+  { sec: "Masteran Burung", file: "audio/isian-pelatuk-bawang.mp3", name: "Pelatuk Bawang", desc: "Masteran pelatuk bawang" },
+  { sec: "Masteran Burung", file: "audio/isian-perenjak-lumut.mp3", name: "Perenjak Lumut", desc: "Masteran perenjak lumut" },
+  { sec: "Masteran Burung", file: "audio/isian-ciblek-kristal.mp3", name: "Ciblek Kristal", desc: "Masteran ciblek kristal" },
+  { sec: "Masteran Burung", file: "audio/masteran-ciblek-lovebird-kenari.mp3", name: "Ciblek, Lovebird & Kenari", desc: "Masteran ciblek, lovebird dan kenari" }
 ];
 var player = document.getElementById("player");
 var list = document.getElementById("list");
